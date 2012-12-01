@@ -26,13 +26,13 @@ long_line_column=80
 current_page=2
 FILE_NAME_0=101;CSS;0;16;0;1;0;%2Fhome%2Fglycan%2Fwow-site%2Findex.css;0;4
 FILE_NAME_1=797;HTML;0;16;0;1;0;%2Fhome%2Fglycan%2Fwow-site%2Findex.html;0;4
-FILE_NAME_2=213;CSS;0;16;0;1;0;%2Fhome%2Fglycan%2Fwow-site%2Froot.css;0;4
+FILE_NAME_2=369;CSS;0;16;0;1;0;%2Fhome%2Fglycan%2Fwow-site%2Froot.css;0;4
 
 [VTE]
-last_dir=/home/glycan
+last_dir=/home/glycan/wow-site
 
 [build-menu]
-EX_00_LB=_Execute
+EX_00_LB=Mriput
 EX_00_CM=mriput wow "%f"
 EX_00_WD=
 EX_01_LB=
