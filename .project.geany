@@ -23,13 +23,17 @@ long_line_behaviour=1
 long_line_column=80
 
 [files]
-current_page=2
-FILE_NAME_0=101;CSS;0;16;0;1;0;%2Fhome%2Fglycan%2Fwow-site%2Findex.css;0;4
-FILE_NAME_1=797;HTML;0;16;0;1;0;%2Fhome%2Fglycan%2Fwow-site%2Findex.html;0;4
-FILE_NAME_2=369;CSS;0;16;0;1;0;%2Fhome%2Fglycan%2Fwow-site%2Froot.css;0;4
+current_page=3
+FILE_NAME_0=1277;HTML;0;16;0;1;0;%2Fhome%2Fglycan%2Fwow-site%2Findex.html;0;4
+FILE_NAME_1=186;CSS;0;16;0;1;0;%2Fhome%2Fglycan%2Fwow-site%2Findex.css;0;4
+FILE_NAME_2=1073;CSS;0;16;0;1;0;%2Fhome%2Fglycan%2Fwow-site%2Froot.css;0;4
+FILE_NAME_3=245;Python;0;16;0;1;0;%2Fhome%2Fglycan%2Fwow-site%2Ftemplater%2Ftemplater.py;0;4
+FILE_NAME_4=0;None;0;16;0;1;0;%2Fhome%2Fglycan%2Fwow-site%2Ftemplater%2Fsource%2Findex.json;0;4
+FILE_NAME_5=459;HTML;0;16;0;1;0;%2Fhome%2Fglycan%2Fwow-site%2Ftemplater%2Fframe.html;0;4
+FILE_NAME_6=157;HTML;0;16;0;1;0;%2Fhome%2Fglycan%2Fwow-site%2Ftemplater%2Fheader.html;0;4
 
 [VTE]
-last_dir=/home/glycan/wow-site
+last_dir=/home/glycan/wow-site/templater
 
 [build-menu]
 EX_00_LB=Mriput
