@@ -1,54 +1,107 @@
-body {
-    background: url("images/background.svg") no-repeat center center fixed;
-    background-color: #FF6A00
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-}
-
+/* this is the common CSS used by all pages */
+/* structures */
 .bubble {
     background-color: white;
-    color: #333333;
+    color: #565353;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
     border-radius: 15px;
     position: absolute;
     padding: 1.5%;
     margin: 0%;
     border: 0px solid black;
     z-index: -1;
-    font-family: Georgia, "Times New Roman", Times, serif;
-    font-size: 1em;
+    -webkit-transition-duration: 0.2s;
+    -moz-transition-duration: 0.2s;
+    transition-duration: 0.2s;
 }
 
 .bubble:hover{
-    /*background-color:#FFEEEE;*/
     color: black;
-    border: 1px solid black;
-    /*
-    padding: 1.51%;
-    */
 }
 
+.bubble:hover h1 {
+    color: #DB0000
+}
+
+.bubble-content {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
 .tab {
     background-color: #0000FF;
     border-radius: 10px 10px 0px 0px;
-    height: 2%;
+    height: 1.75%;
     bottom: 90%;
     position: absolute;
-    padding: 0.5%;
+    padding: 0.30%;
     border: 1px solid white;
     border-bottom: 0px;
     color: white;
     margin: 0px;
     z-index: -2;
-    font: small-caps bold 16px Georgia, "Times New Roman", Times, serif;
+    font: small-caps bold 1.25em Georgia, "Times New Roman", Times, serif;
     line-height: 100%;
+    -webkit-transition-duration: 0.2s;
+    -moz-transition-duration: 0.2s;
+    transition-duration: 0.2s;
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.4);
+    -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.4), 0 1px 1px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.4), 0 1px 1px rgba(0, 0, 0, 0.2);
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.4), 0 1px 1px rgba(0, 0, 0, 0.2);
+    text-decoration: none;
+
 }
 
-.tab:hover{
+.tab:hover, button:focus {
     background-color: #5E5EFF;
 }
 
+.tab:active {
+    -webkit-box-shadow: inset 0 1px 4px rgba(0, 0, 0, 0.6);
+    -moz-box-shadow: inset 0 1px 4px rgba(0, 0, 0, 0.6);
+    box-shadow: inset 0 1px 4px rgba(0, 0, 0, 0.6);
+    background: #111C97;
+}
+
+.button {
+    padding: 1.5% 2%;
+    font-size: 1.5em;
+    background: #273CC9;
+    color: white;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    border-radius: 15px;
+    border: solid 1px #19118F;
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.4);
+    -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.4), 0 1px 1px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.4), 0 1px 1px rgba(0, 0, 0, 0.2);
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.4), 0 1px 1px rgba(0, 0, 0, 0.2);
+    text-decoration: none;
+    -webkit-transition-duration: 0.2s;
+    -moz-transition-duration: 0.2s;
+    transition-duration: 0.2s;
+}
+
+.button:hover, button:focus{
+    background-color: orange;
+    border: 1px solid #9E6600;
+    text-decoration: none;
+}
+
+.button:active {
+    -webkit-box-shadow: inset 0 1px 4px rgba(0, 0, 0, 0.6);
+    -moz-box-shadow: inset 0 1px 4px rgba(0, 0, 0, 0.6);
+    box-shadow: inset 0 1px 4px rgba(0, 0, 0, 0.6);
+    background: #2E5481;
+    border: solid 1px #203E5F;
+}
+
+/* modifiers */
+.thin {
+    padding: 0.5%;
+}
 .full {
     width: 30%;
     height: 35%;
@@ -68,15 +121,44 @@ body {
 }
 
 .right {
-    right: 18.5%;
+    right: 20%;
 }
 
-.center {
+.hcenter {
+    left: 0;
+    right: 0;
     margin-left: auto;
     margin-right: auto;
     /*takes up all space in div*/
 }
 
+.vcenter {
+    top: 0;
+    right: 0;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+/* predefined inline elements */
+h1 {
+    font-family: Georgia, "Times New Roman", Times, serif;
+    font-size: 1.5em;
+    color: #A1191F;
+    text-align: center;
+    vertical-align: top;
+    margin: 0px;
+    -webkit-transition-duration: 0.2s;
+    -moz-transition-duration: 0.2s;
+    transition-duration: 0.2s;
+}
+
+p {
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    line-height: normal;
+    font-size: 1em;
+}
+
+
+/* special parts*/
 #logo {
     padding: 0%;
     margin: 0%;
@@ -86,4 +168,29 @@ body {
     right: 73%;
     /*this means that if the image changes, it's bottom right corner is always defined, and will always overlap the first bubble*/
     height: 15%;
+}
+
+#tagline {
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 1.1em;
+    color: #FC0;
+    padding: 0%;
+    margin: 0%;
+    position: absolute;
+    width: 20%;
+    height: 5%;
+    bottom: 93%;
+    /* this puts the top on the same level as the top of the logo, which is at 83% + 15% */
+    left: 30%;
+    /* this puts the left edge 3% away from the logo's right edge, which is at 27% */
+}
+
+
+body {
+    background: url("images/background.svg") no-repeat center center fixed;
+    background-color: #FF6A00
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
