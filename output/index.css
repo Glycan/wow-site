@@ -6,17 +6,72 @@
     margin-top: auto;
     margin-bottom: auto;
 }
+.img-bubble {
+    margin: 0.5%;
+}
+.img-bubble img {
+    width: 100%;
+    height: 80%;
+    margin: 0%;
+}
+.img-bubble p {
+    margin-top: 4%;
+    height: 20%;
+    width: 100%;
+    display: inline-block;
+    text-align: center;
+    font-size: .75em;
+}
 
 #movie-bubble{
-    text-align: center;
-width: 35%;
-
+    width: 31.25%;
 }
 #blurb-bubble{
-    width: 18%;
+    width: 21.25%;
 }
 #wedding-bubble{
+    left: 20%;
+top: 53%;
+
+}
+#mitzvah-bubble{
     right: 50%;
-top: 52%;
+top: 53%;
+
+}
+#corporate-bubble{
+    left: 50%;
+top: 53%;
+
+}
+#ceiling-bubble{
+    right: 20%;
+top: 53%;
+
+}
+#arch-bubble{
+    left: 20%;
+top: 76%;
+
+}
+#sculpture-bubble{
+    right: 50%;
+top: 76%;
+
+}
+#centerpeices-bubble{
+    left: 50%;
+top: 76%;
+
+}
+#carriage-bubble{
+    right: 20%;
+top: 76%;
+
+}
+#testimonial-bubble{
+    top: 100%;
+height: 19%;
+right: 49.5;
 
 }

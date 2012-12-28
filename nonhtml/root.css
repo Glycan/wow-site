@@ -1,7 +1,8 @@
 /* this is the common CSS used by all pages */
+
 /* structures */
 .bubble {
-    background-color: white;
+    background-color: #EDEDED;
     color: #565353;
     -webkit-border-radius: 15px;
     -moz-border-radius: 15px;
@@ -9,7 +10,6 @@
     position: absolute;
     padding: 1.5%;
     margin: 0%;
-    border: 0px solid black;
     z-index: -1;
     -webkit-transition-duration: 0.2s;
     -moz-transition-duration: 0.2s;
@@ -18,21 +18,17 @@
 
 .bubble:hover{
     color: black;
+    background: white;
 }
 
-.bubble:hover h1 {
+.bubble:hover h1,h2 {
     color: #DB0000
 }
 
-.bubble-content {
-    width: 100%;
-    height: 100%;
-    display: block;
-}
 .tab {
     background-color: #0000FF;
     border-radius: 10px 10px 0px 0px;
-    height: 1.75%;
+    height: 1.85%;
     bottom: 90%;
     position: absolute;
     padding: 0.30%;
@@ -102,14 +98,15 @@
 .thin {
     padding: 0.5%;
 }
+
 .full {
-    width: 30%;
+    width: 26.5%;
     height: 35%;
 }
 
 .small {
-    height: 10%;
-    width: 10%
+    height: 20%;
+    width: 13%
 }
 
 .top {
@@ -117,11 +114,11 @@
 }
 
 .left {
-    left: 20%;
+    left: 20.5%;
 }
 
 .right {
-    right: 20%;
+    right: 20.5%;
 }
 
 .hcenter {
@@ -138,14 +135,24 @@
     margin-top: auto;
     margin-bottom: auto;
 }
-/* predefined inline elements */
+
+/* html inline elements */
 h1 {
     font-family: Georgia, "Times New Roman", Times, serif;
     font-size: 1.5em;
     color: #A1191F;
     text-align: center;
-    vertical-align: top;
     margin: 0px;
+    -webkit-transition-duration: 0.2s;
+    -moz-transition-duration: 0.2s;
+    transition-duration: 0.2s;
+}
+
+h2 {
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    color: #A1191F;
+    font-size: 1.25em;
+    margin-top: 0%;
     -webkit-transition-duration: 0.2s;
     -moz-transition-duration: 0.2s;
     transition-duration: 0.2s;
@@ -153,8 +160,13 @@ h1 {
 
 p {
     font-family: Verdana, Arial, Helvetica, sans-serif;
-    line-height: normal;
     font-size: 1em;
+}
+
+a.continue {
+    float: right;
+    color: #A1191F;
+    font-weight: bold;
 }
 
 
@@ -172,7 +184,7 @@ p {
 
 #tagline {
     font-family: Verdana, Arial, Helvetica, sans-serif;
-    font-size: 1.1em;
+    font-size: 1.1 em;
     color: #FC0;
     padding: 0%;
     margin: 0%;

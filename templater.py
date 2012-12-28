@@ -4,10 +4,14 @@ import yaml
 import markdown
 import os
 import shutil
+from collections import defaultdict
 from argparse import ArgumentParser
+from yaml_ordered_dict import OrderedDictYAMLLoader
+from subproccess import call
 
 frame = open("templates/frame.html").read()
 header = open("templates/header.html").read()
+testing = open("templates/testing.html").read()
 bubble = open("templates/bubble.html").read()
 rule = open("templates/rule.css").read()
 
@@ -31,9 +35,15 @@ parser.add_argument("-d", "--dont-copy", action="store_false", dest="copy",
 )
 parser.add_argument("-k", "--keep-folder", action="store_false", dest="clear",
     default=True, help="clear the output folder if it exists, implies -d")
-
+parser.add_argument("-t", "--testing", action="store_true", dest="testing",
+    default=False, help="copy the testing.html file into each file")
 args = parser.parse_args()
 
+if args.testing:
+    print("adding testing to footer")
+    footer = testing
+else:
+    footer = ""
 
 if args.clear:
     print("clearing output folder")
@@ -62,23 +72,21 @@ for filename in files:
         pageinfo = json.load(open(args.source + os.sep + filename))
         print("loading", filename, "as JSON")
     elif extension =="yaml":
-        pageinfo = yaml.load(open(args.source + os.sep + filename))
+        pageinfo = yaml.load(open(args.source + os.sep + filename), OrderedDictYAMLLoader)
         print("loading", filename, "as YAML")
     else:
         print("unknown extension", extension + ", skipping file", filename)
     if pageinfo:
         print("opening css")
         css = open(args.dest + os.sep + pagename + ".css", "w")
-        css.write(pageinfo.pop("CSS") + "\n")
+        css.write(pageinfo.pop("CSS", "") + "\n")
         htmlcontent = ""
         pagetitle = pageinfo.pop("title")
+        JS = pageinfo.pop("JS", "")
         for objectid, attrs in pageinfo.items():
             print("making bubble:", objectid)
-            css.write(rule.format(id=objectid, style=attrs.pop("style")))
             if "style" in attrs:
-                attrs["style"] = " style=\"" + attrs["style"] + "\""
-            else:
-                attrs["style"] = ""
+                css.write(rule.format(id=objectid, style=attrs.pop("style")))
             if "\n" in attrs["content"]:
                 attrs["content"] = markdown.markdown(attrs["content"])
             htmlcontent += bubble.format(id=objectid + "-bubble", **attrs)
@@ -87,7 +95,9 @@ for filename in files:
             title=pagetitle,
             stylesheet=pagename + ".css",
             header=header,
+            footer=footer,
             content=htmlcontent,
+            JS=JS
         ))
         print("closing css")
         css.close()
