@@ -23,12 +23,9 @@ long_line_behaviour=1
 long_line_column=80
 
 [files]
-current_page=2
+current_page=1
 FILE_NAME_0=1689;Python;0;16;0;1;0;%2Fhome%2Fglycan%2Fwow-site%2Ftemplater.py;0;4
-FILE_NAME_1=303;None;0;16;0;1;0;%2Fhome%2Fglycan%2Fwow-site%2Fsource%2Findex.json;0;4
-FILE_NAME_2=1420;CSS;0;16;0;1;0;%2Fhome%2Fglycan%2Fwow-site%2Fnonhtml%2Froot.css;0;4
-FILE_NAME_3=740;YAML;0;16;0;1;0;%2Fhome%2Fglycan%2Fwow-site%2Fsource%2Findex2.yaml;0;4
-FILE_NAME_4=233;HTML;0;16;0;1;0;%2Fhome%2Fglycan%2Fwow-site%2Ftemplates%2Fheader.html;0;4
+FILE_NAME_1=233;HTML;0;16;0;1;0;%2Fhome%2Fglycan%2Fwow-site%2Ftemplates%2Fheader.html;0;4
 
 [VTE]
 last_dir=/home/glycan/wow-site

@@ -1,19 +1,28 @@
 /* this is the common CSS used by all pages */
+@red: #A1191F;
+
+.transition (@time: 0.2s){
+    -webkit-transition-duration: @time;
+    -moz-transition-duration: @time;
+    transition-duration: 0time;
+}
+
+.rounded (@radius: 15px){
+    -webkit-border-radius: @radius;
+    -moz-border-radius: @radius;
+    border-radius: 15px;
+}
 
 /* structures */
 .bubble {
     background-color: #EDEDED;
     color: #565353;
-    -webkit-border-radius: 15px;
-    -moz-border-radius: 15px;
-    border-radius: 15px;
+    .rounded;
     position: absolute;
     padding: 1.5%;
     margin: 0%;
     z-index: -1;
-    -webkit-transition-duration: 0.2s;
-    -moz-transition-duration: 0.2s;
-    transition-duration: 0.2s;
+    .transition;
 }
 
 .bubble:hover{
@@ -21,7 +30,7 @@
     background: white;
 }
 
-.bubble:hover h1,h2 {
+.bubble:hover h1, h2, h3, a.continue, strong{
     color: #DB0000
 }
 
@@ -50,7 +59,7 @@
 
 }
 
-.tab:hover, button:focus {
+.tab:hover, tab:focus {
     background-color: #5E5EFF;
 }
 
@@ -86,7 +95,7 @@
     text-decoration: none;
 }
 
-.button:active {
+.bubble.button:active {
     -webkit-box-shadow: inset 0 1px 4px rgba(0, 0, 0, 0.6);
     -moz-box-shadow: inset 0 1px 4px rgba(0, 0, 0, 0.6);
     box-shadow: inset 0 1px 4px rgba(0, 0, 0, 0.6);
@@ -99,8 +108,8 @@
     padding: 0.5%;
 }
 
-.full {
-    width: 26.5%;
+.half {
+    width: 26.25%;
     height: 35%;
 }
 
@@ -110,8 +119,7 @@
 }
 
 .top {
-    top: 10%;
-}
+    top: 10%;}
 
 .left {
     left: 20.5%;
@@ -140,7 +148,7 @@
 h1 {
     font-family: Georgia, "Times New Roman", Times, serif;
     font-size: 1.5em;
-    color: #A1191F;
+    color: @red;
     text-align: center;
     margin: 0px;
     -webkit-transition-duration: 0.2s;
@@ -150,23 +158,48 @@ h1 {
 
 h2 {
     font-family: Verdana, Arial, Helvetica, sans-serif;
-    color: #A1191F;
-    font-size: 1.25em;
+    color: @red;
+    font-size: 1.20em;
     margin-top: 0%;
+    margin-bottom: .5%;
+    -webkit-transition-duration: 0.2s;
+    -moz-transition-duration: 0.2s;
+    transition-duration: 0.2s;
+    font-variant:small-caps;
+}
+
+h3 {
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    color: @red;
+    font-size: 1.20em;
+    margin-top: 0%;
+    margin-bottom: .5%;
+    -webkit-transition-duration: 0.2s;
+    -moz-transition-duration: 0.2s;
+    transition-duration: 0.2s;
+    font-variant:small-caps;
+    text-align: center;
+
+}
+p {
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 1em;
     -webkit-transition-duration: 0.2s;
     -moz-transition-duration: 0.2s;
     transition-duration: 0.2s;
 }
 
-p {
-    font-family: Verdana, Arial, Helvetica, sans-serif;
-    font-size: 1em;
+p strong {
+    color: @red;
 }
 
 a.continue {
     float: right;
-    color: #A1191F;
+    color: @red;
     font-weight: bold;
+    bottom: 7%;
+    right: 7%;
+    position: absolute;
 }
 
 
@@ -197,10 +230,15 @@ a.continue {
     /* this puts the left edge 3% away from the logo's right edge, which is at 27% */
 }
 
+#footer {
+    position: absolute;
+    text-align: center;
+    width: 100%;
+}
 
 body {
     background: url("images/background.svg") no-repeat center center fixed;
-    background-color: #FF6A00
+    background-color: #FF6A00;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;

@@ -1,9 +1,8 @@
----
 title: WoW! Balloons, Inc | Balloon Decorations
 movie:
-    content: <embed id='movie' src='http://www.youtube.com/v/dsNcA90HnzM&hl=en_US&fs=1&rel=0&hd=1&autoplay=0' type='application/x-shockwave-flash' allowscriptaccess='always' allowfullscreen='true'/>
-    type: top left full
-    style: "width: 31.25%;"
+    content: <embed id='movie' src='http://www.youtube.com/v/dsNcA90HnzM&hl=en_US&fs=1&rel=0&hd=1&autoplay=0' type='application/x-shockwave-flash' allowscriptaccess='always' allowhalfscreen='true'/>
+    type: left half
+    style: ".top; width: 31.25%;"
 blurb:
     content: |
         Balloon Decorations For Special Events
@@ -13,10 +12,10 @@ blurb:
         awe-inspiring balloon sculpture for a convention - you are at the
         right place for either! Click on the button bellow to see which
         office is closer to you and give us a call!
-        <br><br>
+        <br><br><br>
         <center><a class="button">Service Areas</a></center>
-    type: top right full
-    style: "width: 21.25%;"
+    type: right half
+    style: ".top; width: 21%;"
 
 #section-links
 wedding:
@@ -24,49 +23,49 @@ wedding:
     type: small thin img-bubble
     style: |
         left: 20%;
-        top: 53%;
+        .row1
 mitzvah:
     content: <a><img src="images/index-section-icons/mitzvah.jpg"><p>Bar/Bat Mitzvah Parties</p></a>
     type: small thin img-bubble
     style: |
         right: 50%;
-        top: 53%;
+        .row1
 corporate:
     content: <a><img src="images/index-section-icons/corporate.jpg"><p>Corporate Event Decorations</p></a>
     type: small thin img-bubble
     style: |
         left: 50%;
-        top: 53%;
+        .row1
 ceiling:
     content: <a><img src="images/index-section-icons/ceiling.jpg"><p>See more occasions</p></a>
     type: small thin img-bubble
     style: |
         right: 20%;
-        top: 53%;
+        .row1
 arch:
     content: <a><img src="images/index-section-icons/arch.jpg"><p>Balloon Arches</p></a>
     type: small thin img-bubble
     style: |
         left: 20%;
-        top: 76%;
+        .row2
 sculpture:
     content: <a><img src="images/index-section-icons/sculpture.jpg"><p>Balloon Sculptures</p></a>
     type: small thin img-bubble
     style: |
         right: 50%;
-        top: 76%;
+        .row2
 centerpeices:
     content: <a><img src="images/index-section-icons/centerpieces.jpg"><p>Balloon Centerpeices</p></a>
     type: small thin img-bubble
     style: |
         left: 50%;
-        top: 76%;
+        .row2
 carriage:
     content: <a><img src="images/index-section-icons/carriage.jpg"><p>See more designs</p></a>
     type: small thin img-bubble
     style: |
         right: 20%;
-        top: 76%;
+        .row2
 testimonial:
     content: |
         Latest testimonial: 11/8/2012
@@ -74,20 +73,56 @@ testimonial:
         Dear Mikhail, I thank you so much for doing our balloon designs. The
         room looked lovely and the smiley face balloon toys were such a nice
         treat for the children. Thank you again.
-        <br>
+        <br><br>
         Ann
         <a class="continue">more testemonials</a>
-    type: full left
+    type: half left
     style: |
-        top: 100%;
+        .info;
         height: 19%;
         right: 49.5;
 
-#blog:
-    #content: |
-        #30''
+blog:
+    content: |
+        Blog: 30' Saphira
+        -----------------
+        <img src="images/blog/saphira.jpg"/>
+        A huge balloon sculpture of winged dragon was made for the
+        presentation of an author who wrote about dragons. The seen was so
+        good that it make it to the Boston Globe (see the link in the post)!
+        <br>
+        <a class="continue">continue</a>
+    type: half right
+    style: |
+        .info;
+        height: 19%;
+        left: 50.5%;
+ending:
+    content: |
+        **Some of our Big Name clients** include Coca-Cola and AT&T, SYSCO
+        and Staples, the American Heart Foundation and John Hopkins
+        University, MCI Center Arena & Gillette Stadium and a long list of
+        fund raisers, local schools, colleges, tradeshows and many other
+        organizations and individuals for who we created dazzling
+        decorations during our 20 years in business.
+
+        We use balloons in our decorations as an architect uses bricks in
+        his structures: as an architect will offer you an entire building we
+        will offer you a complete decor. So, whether you’re having an
+        intimate wedding, a surprise birthday or a colossal corporate
+        celebration, we will make occasion an unforgettable experience.
+
+        <h3>So, let us “WOW!” you and your guests with our Balloon
+        Designs & Decorations!</h3>
+
+    type: left
+    style: ".end; width: 56.5%;"
 
 CSS: |
+    #blog-bubble p img {
+        float: left;
+        margin: 0% 2% 2% 0%;
+    }
     #movie {
         width: 100%;
         height: 100%;
@@ -112,3 +147,19 @@ CSS: |
         text-align: center;
         font-size: .75em;
     }
+    #footer {
+        top: (@end + 30%);
+    }
+less: |
+    @top: 10%;
+    @row1: (@top + 42%);
+    @row2: (@row1 + 23%);
+    @info: (@row2 + 24%);
+    @end: (@info + 26%);
+    .top {top: @top;}
+    .row1 {top: @row1;}
+    .row2 {top: @row2;}
+    .info {top: @info;}
+    .end {top: @end}
+    /*end*/
+
