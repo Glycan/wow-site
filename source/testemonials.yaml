@@ -1,0 +1,143 @@
+title: Testemonials | WoW! Balloons, Inc.
+blurb:
+    content: |
+        Latest Testimonial
+        ==================
+        I wanted to thank you again for the wonderful centerpieces that you
+        created for us at Arbat on January 29th.  They were beautiful and
+        really added so much to our party.  It was a pleasure working with
+        you and I will be happy to tell my friends about the great job that
+        you did and how wonderfully nice you were.
+        Dear Mikhail,
+
+        Sincerely,
+        Vikki Avras
+
+    type: wide long left
+    style: .top
+form:
+    content: "{form}"
+    type: narrow long right
+    style: .top
+text:
+    content: |
+        *September 9, 2010*<br/>
+        Mikhail,<br/>
+        Just a quick note to thank you for the wonderful job you did again
+        this year on the birthday party in Newport. The balloons were
+        FANTASTIC !! The giant carrots, roots and radishes really helped to
+        transport the tent ceiling underground so that the guests truly felt
+        as if they had been transported "down the rabbit hole" into Alice’s
+        Adventures in Wonderland. The caterpillar tunnel was a huge hit with
+        the kids and grownups alike. It was a pleasure working with you and
+        we appreciated your coming in on budget and on time. With luck we
+        will work together next year on the 4th birthday party, start
+        thinking "Willy Wonka and The Chocolate Factory". <br/>
+        Thank you again,<br/>
+        Frank Alexander<br/>
+
+        *August 22, 2010*<br/>
+        "Michael, Thank you, thank you for your endless creativity. You
+        truly Wowed people with your 8 foot balloon that we used as the
+        screen to share  a video of us during our wedding. You went way
+        beyond our expectations!!! And the bride and the groom were a hit!
+        People took so many pictures next to them. We loved working with you
+        and are happy to provide references in the future. Keep up the great
+        work!!!"<br/>
+        Once again thank you so much!<br/>
+        Arthur and Lena
+
+        *July 7, 2010*<br/>
+        "I hired WOW Balloons on two different occasions, both were big
+        indoor parties. I was very pleased with Mr. Liberman's services.
+        From the initial contact to his final delivery, his manner was
+        helpful, professional and creative. The balloon sculptures were
+        beautiful, unique, and fun. If you need creative decorations for
+        your party, WOW Balloons is the place for you.”
+
+        *June 11, 2010*<br/>
+        Hi Mikhail – I’m just getting my head up from the extended  weekend
+        and guests.  I can’t thank you enough for the balloon decorations –
+        they were fantastic!!  Everyone loved them and, believe it or not,
+        the middle ones, too.  I’ll send pix when they come.  A check will
+        be in the mail, with a little extra for your help, whom I never got
+        a chance to tip.  Again, thank you so much!<br/>
+        Judy
+
+        *May 10, 2010*<br/>
+        Hi Mikhail,</br>
+        I just wanted to say thanks so much. You did a wonderful job and the
+        hall looked GREAT!!!! <br/>
+        Very truly yours,<br/>
+        Kim<br/>
+        Foster & Eldridge, LLP
+
+        *December 16, 2009*<br/>
+        Wow Balloons did an outstanding job for us! Passion, creativity,
+        energy . . .an unbeatable combination that creates the perfect mood
+        and atmosphere that everyone will remember.   Mikhail is a true
+        artist who's work is second to none.<br/>
+        Barbara, Best of Times Event Coordinator
+
+        *June 14, 2008*
+        Dear Mikhail,<br/>
+        It was a pleasure to meet you and to work with you on the Goldman
+        Event! The rooms looked wonderful both days and the Guests
+        continually commented and asked “who did the balloon decorations”!!
+        I have given your name to several people over the last 2 days! Good
+        Luck and I hope to work with again in the near future.<br/>
+        Take Care,<br/>
+        Janet Boccelli
+
+        *January 12, 2007*
+        Dear Mikhail,<br/>
+        You did a great job at my son's Bar Mitzvahs. Everybody loved
+        balloon jumping toys and kids couldn't get enough of them. Thank you
+        for contributing to the success of our party. Many of our friends
+        asked for your name and we were happy to share. Once again, from our
+        entire family we thank you for your great job, outstanding
+        cooperation and the great results you delivered!<br/>
+        Thank you,<br/>
+        Tim Goldsmith
+
+        Feel free contact us for more references and contact information of our clients!
+    type: fullwidth left
+    style: ".text; height: 120%;"
+
+ending:
+    content: |
+        **Some of our Big Name clients** include Coca-Cola and AT&T, SYSCO
+        and Staples, the American Heart Foundation and John Hopkins
+        University, MCI Center Arena & Gillette Stadium and a long list of
+        fund raisers, local schools, colleges, tradeshows and many other
+        organizations and individuals for who we created dazzling
+        decorations during our 20 years in business.
+
+        We use balloons in our decorations as an architect uses bricks in
+        his structures: as an architect will offer you an entire building we
+        will offer you a complete decor. So, whether you’re having an
+        intimate wedding, a surprise birthday or a colossal corporate
+        celebration, we will make occasion an unforgettable experience.
+
+        <h3>So, let us “WOW!” you and your guests with our Balloon
+        Designs & Decorations!</h3>
+
+    type: left midlen fullwidth
+    style: .end
+
+CSS: |
+    #footer {top: @end + 3%}
+    #blurb-bubble img {
+        float: left;
+        margin: 2%;
+        height: 100%;
+        width: auto;
+    }
+less: |
+    @top: 10% + 37%;
+    @text: @top + 123% + 2%;
+    @end: @text + 33% + 2%;
+    .top {bottom: 100% - @top}
+    .text {bottom: 100% - @text}
+    .end {bottom: 100% - @end}
+    /*end*/

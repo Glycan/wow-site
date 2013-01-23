@@ -1,0 +1,111 @@
+
+#blog-bubble p img {
+  float: left;
+  margin: 0% 2% 2% 0%;
+}
+#movie {
+  width: 100%;
+  height: 100%;
+  display: table-cell;
+  vertical-align: middle;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+.img-bubble {
+  margin: 0.5%;
+}
+.img-bubble img {
+  width: 100%;
+  height: 80%;
+  margin: 0%;
+}
+.img-bubble p {
+  margin-top: 4%;
+  height: 20%;
+  width: 100%;
+  display: inline-block;
+  text-align: center;
+  font-size: .75em;
+}
+#footer {
+  top: 158%;
+}
+
+
+
+#movie-bubble {
+  top: 10%;
+}
+
+
+#blurb-bubble {
+  top: 10%;
+}
+
+
+#wedding-bubble {
+  left: 20%;
+  top: 53%;
+}
+
+
+#mitzvah-bubble {
+  right: 50%;
+  top: 53%;
+}
+
+
+#corporate-bubble {
+  left: 50%;
+  top: 53%;
+}
+
+
+#ceiling-bubble {
+  right: 20%;
+  top: 53%;
+}
+
+
+#arch-bubble {
+  left: 20%;
+  top: 76%;
+}
+
+
+#sculpture-bubble {
+  right: 50%;
+  top: 76%;
+}
+
+
+#centerpeices-bubble {
+  left: 50%;
+  top: 76%;
+}
+
+
+#carriage-bubble {
+  right: 20%;
+  top: 76%;
+}
+
+
+#testimonial-bubble {
+  top: 100%;
+  height: 19%;
+  right: 49.5;
+}
+
+
+#blog-bubble {
+  top: 100%;
+  height: 19%;
+  left: 50.5%;
+}
+
+
+#ending-bubble {
+  top: 126%;
+}
+

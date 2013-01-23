@@ -1,0 +1,32 @@
+
+#footer {
+  top: 125%;
+}
+#blurb-bubble img {
+  float: left;
+  margin: 0% 2% 2% 0%;
+}
+
+
+
+#blurb-bubble {
+  bottom: 53%;
+}
+
+
+#form-bubble {
+  bottom: 53%;
+}
+
+
+#text-bubble {
+  bottom: 2%;
+  height: 47%;
+}
+
+
+#ending-bubble {
+  bottom: -22%;
+  height: 20%;
+}
+

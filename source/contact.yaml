@@ -1,0 +1,88 @@
+title: Contact Us | Locations Serviced | Balloon Decorations | WoW! Balloons, Inc.
+blurb:
+    content: |
+        <img src="images/aboutus.jpg">
+
+        *Contact us!*
+        =============
+    type: wide long left
+    style: .top
+form:
+    content: "{form}"
+    type: narrow long right
+    style: .top
+text:
+    content: |
+        <div style="position: relative; top: 20%;">
+        <div style="position: absolute; left: 10%">
+        <h1>USA</h1>
+        <ul>
+        <li>
+        <p>New York NY:      646-396-9366</p>
+        </li>
+        <li>
+        <p>Boston MA:        617-201-2525 or 617-208-5820</p>
+        </li>
+        <li>
+        <p>Albany NY:        518-795-9300</p>
+        </li>
+        <li>
+        <p>Burlington VT:    802-489-0375</p>
+        </li>
+        </ul>
+        </div>
+        <div style="position: absolute; right: 10%">
+        <h1>Canada</h1>
+        <ul>
+        <li>
+        <p>Montreal:         514-500-6524</p>
+        </li>
+        <li>
+        <p>Ottawa:           438-889-8883</p>
+        </li>
+        <li>
+        <p>Quebec:           438-889-8883</p>
+        </li>
+        </ul>
+        </div>
+        </div>
+    type: fullwidth left
+    style: ".text; height: 40%;"
+
+ending:
+    content: |
+        **Some of our Big Name clients** include Coca-Cola and AT&T, SYSCO
+        and Staples, the American Heart Foundation and John Hopkins
+        University, MCI Center Arena & Gillette Stadium and a long list of
+        fund raisers, local schools, colleges, tradeshows and many other
+        organizations and individuals for who we created dazzling
+        decorations during our 20 years in business.
+
+        We use balloons in our decorations as an architect uses bricks in
+        his structures: as an architect will offer you an entire building we
+        will offer you a complete decor. So, whether you’re having an
+        intimate wedding, a surprise birthday or a colossal corporate
+        celebration, we will make occasion an unforgettable experience.
+
+        <h3>So, let us “WOW!” you and your guests with our Balloon
+        Designs & Decorations!</h3>
+
+    type: left midlen fullwidth
+    style: .end
+
+CSS: |
+    #footer {top: @end + 3%}
+    #blurb-bubble img {
+        float: left;
+        margin: 2%;
+        height: 100%;
+        width: auto;
+    }
+less: |
+    @top: 10% + 37%;
+    @text: @top + 43% + 2%;
+    @end: @text + 30% + 2%;
+    .top {bottom: 100% - @top}
+    .text {bottom: 100% - @text}
+    .end {bottom: 100% - @end}
+    /*end*/

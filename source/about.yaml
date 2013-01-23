@@ -1,0 +1,85 @@
+title: About WoW! Balloons, Inc. | Balloon Decorations
+blurb:
+    content: |
+        <img src="images/aboutus.jpg">
+        ### Did you know that balloons can talk? Walk? Change color during the party? Explode? Be much larger than life?
+    type: wide long left
+    style: .top
+form:
+    content: "{form}"
+    type: narrow long right
+    style: .top
+text:
+    content: |
+        About Us
+        ========
+        We were founded in 1990. At the beginning it was a just flower
+        service for special events. Balloons where just an "addition" to the
+        main operations. Very soon we have discovered that **balloons make a
+        *much* better** material that was almost unutilized. We can dress up an
+        event, especially large one, far better on the same budget.
+
+        Balloon decorations can be done in any style, from very conservative
+        to super contemporary. With balloons you can **change the visual
+        space**, create **focal points**, or **make the room larger or
+        smaller**. We can make a sculpture or a huge display in fraction of
+        the time of any other decoration would require and *still* stay on
+        the budget. The list of benefits is endless!
+
+        Today, almost 20 years later, we are proud to say that we are a
+        *balloon* decorating company. Our list of clients is to large to
+        display here! Geography of our service is from Virginia Beach to
+        Montreal, Canada. And the best of our inventions are still waiting
+        for the right client!
+
+         - **We do NOT sell balloons.** An architect, even though he's
+        using a lot of bricks, builds castles. We use a lot of balloons, but
+        we build "WOW!" for our clients.
+
+         - **We do not have a catalogue.** The idea for our decorational
+        service is to invent something new for every event (unless our
+        customer likes something in our photo gallery). Our designer meets
+        the event coordinator (be it IBM party or a small birthday) on site
+        and they discuss possibilities until the client likes the idea.
+
+        Please let us know how we can help make your event a unique and
+        unforgettable experience!
+    type: fullwidth left
+    #no height so it scales
+    style: ".text; height: 47%;"
+ending:
+    content: |
+        **Some of our Big Name clients** include Coca-Cola and AT&T, SYSCO
+        and Staples, the American Heart Foundation and John Hopkins
+        University, MCI Center Arena & Gillette Stadium and a long list of
+        fund raisers, local schools, colleges, tradeshows and many other
+        organizations and individuals for who we created dazzling
+        decorations during our 20 years in business.
+
+        We use balloons in our decorations as an architect uses bricks in
+        his structures: as an architect will offer you an entire building we
+        will offer you a complete decor. So, whether you’re having an
+        intimate wedding, a surprise birthday or a colossal corporate
+        celebration, we will make occasion an unforgettable experience.
+
+        <h3>So, let us “WOW!” you and your guests with our Balloon
+        Designs & Decorations!</h3>
+
+    type: left fullwidth
+    style: ".end; height: 20%;"
+
+CSS: |
+    #footer {top: @end + 3%}
+    #blurb-bubble img {
+        float: left;
+        margin: 0% 2% 2% 0%;
+    }
+less: |
+    @top: 10% + 37%;
+    @text: @top + 50% + 1%;
+    @end: @text + 23% + 1%;
+    .top {bottom: 100% - @top}
+    .text {bottom: 100% - @text}
+    .end {bottom: 100% - @end}
+
+    /*end*/

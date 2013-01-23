@@ -1,0 +1,16 @@
+title: TEST
+CSS: |
+    #footer {top: @bottom + 100%}
+b1:
+    content: TESTTESTTEST
+    type: wide midlen left
+    style: .top
+b2:
+    content: TSETTSETTSET
+    type: wide midlen left
+    style: .bottom
+less: |
+    @top: 100% + 33%;
+    @bottom: @top + 0% + 33%;
+    .top {bottom: 100% - @top}
+    .bottom {bottom: 100% - @bottom}

@@ -23,17 +23,21 @@ long_line_behaviour=1
 long_line_column=80
 
 [files]
-current_page=1
-FILE_NAME_0=1689;Python;0;16;0;1;0;%2Fhome%2Fglycan%2Fwow-site%2Ftemplater.py;0;4
-FILE_NAME_1=233;HTML;0;16;0;1;0;%2Fhome%2Fglycan%2Fwow-site%2Ftemplates%2Fheader.html;0;4
+current_page=0
+FILE_NAME_0=1739;Python;0;16;0;1;0;%2Fhome%2Fglycan%2Fwow-site%2Ftemplater.py;0;4
+FILE_NAME_1=837;None;0;16;0;1;0;%2Fhome%2Fglycan%2Fwow-site%2Fless%2Froot.less;0;4
+FILE_NAME_2=0;YAML;0;16;0;1;0;%2Fhome%2Fglycan%2Fwow-site%2Fsource%2Fcontact.yaml;0;4
+FILE_NAME_3=1120;YAML;0;16;0;1;0;%2Fhome%2Fglycan%2Fwow-site%2Fsource%2Findex.yaml;0;4
+FILE_NAME_4=0;YAML;0;16;0;1;0;%2Fhome%2Fglycan%2Fwow-site%2Fsource%2Ftest.yaml;0;4
+FILE_NAME_5=699;YAML;0;16;0;1;0;%2Fhome%2Fglycan%2Fwow-site%2Fsource%2Ftestemonials.yaml;0;4
 
 [VTE]
 last_dir=/home/glycan/wow-site
 
 [build-menu]
-EX_00_LB=compile
-EX_00_CM=./templater.py
+EX_00_LB=compile one
+EX_00_CM=./templater.py -k %d/%f
 EX_00_WD=/home/glycan/wow-site
-EX_01_LB=
-EX_01_CM=
-EX_01_WD=
+EX_01_LB=compile
+EX_01_CM=./templater.py 
+EX_01_WD=/home/glycan/wow-site

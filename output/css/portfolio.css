@@ -1,0 +1,133 @@
+
+.img-bubble {
+  margin: 0.5%;
+}
+.img-bubble img {
+  width: 100%;
+  height: 80%;
+  margin: 0%;
+}
+.img-bubble span {
+  margin-top: 4%;
+  height: 20%;
+  width: 100%;
+  display: inline-block;
+  text-align: center;
+  font-size: .75em;
+}
+#footer {
+  top: 178%;
+}
+
+
+
+#blurb-bubble {
+  bottom: 53%;
+}
+
+
+#form-bubble {
+  bottom: 53%;
+}
+
+
+#wedding-bubble {
+  bottom: 29%;
+  left: 20%;
+}
+
+
+#mitzvah-bubble {
+  bottom: 29%;
+  right: 50%;
+}
+
+
+#arches-bubble {
+  bottom: 29%;
+  left: 50%;
+}
+
+
+#centerpieces-bubble {
+  bottom: 29%;
+  right: 20%;
+}
+
+
+#corp-bubble {
+  bottom: 5%;
+  left: 20%;
+}
+
+
+#birthday-bubble {
+  bottom: 5%;
+  right: 50%;
+}
+
+
+#col-bubble {
+  bottom: 5%;
+  left: 50%;
+}
+
+
+#kids-bubble {
+  bottom: 5%;
+  right: 20%;
+}
+
+
+#baby-bubble {
+  bottom: -19%;
+  left: 20%;
+}
+
+
+#holiday-bubble {
+  bottom: -19%;
+  right: 50%;
+}
+
+
+#sculpture-bubble {
+  bottom: -19%;
+  left: 50%;
+}
+
+
+#walls-bubble {
+  bottom: -19%;
+  right: 20%;
+}
+
+
+#halloween-bubble {
+  bottom: -43%;
+  left: 20%;
+}
+
+
+#ballroom-bubble {
+  bottom: -43%;
+  right: 50%;
+}
+
+
+#ceiling-bubble {
+  bottom: -43%;
+  left: 50%;
+}
+
+
+#general-bubble {
+  bottom: -43%;
+  right: 20%;
+}
+
+
+#end-bubble {
+  bottom: -75%;
+}
+
