@@ -37,6 +37,15 @@ a.continue,
 strong {
   color: #db0000;
 }
+img {
+  background-color: #EDEDED;
+  -webkit-transition-duration: 0.2s;
+  -moz-transition-duration: 0.2s;
+  transition-duration: 0time;
+}
+*:hover img {
+  background-color: white;
+}
 em {
   color: grey;
 }
@@ -116,7 +125,7 @@ button:focus {
   padding: 0.5%;
 }
 .half {
-  width: 26.25%;
+  width: 27.5%;
   height: 35%;
 }
 .extralen {
@@ -129,13 +138,13 @@ button:focus {
   height: 27%;
 }
 .wide {
-  width: 34.5%;
+  width: 34.25%;
 }
 .fullwidth {
   width: 57.4%;
 }
 .narrow {
-  width: 21%;
+  width: 20.75%;
 }
 .small {
   height: 20%;
@@ -207,7 +216,7 @@ a.continue {
   position: absolute;
 }
 /* special parts*/
-#logo {
+img#logo {
   padding: 0%;
   margin: 0%;
   z-index: 9001;
@@ -217,6 +226,7 @@ a.continue {
   /*this means that if the image changes, it's bottom right corner is always defined, and will always overlap the first bubble*/
 
   height: 15%;
+  background-color: transparent;
 }
 #tagline {
   font-family: Verdana, Arial, Helvetica, sans-serif;
@@ -241,7 +251,7 @@ a.continue {
   color: white;
 }
 body {
-  background: url("images/background.svg") no-repeat center center fixed;
+  background: url("../images/background.svg") no-repeat center center fixed;
   background-color: #FF6A00;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -268,4 +278,20 @@ body {
   position: absolute;
   margin: 0%;
   border: 0px;
+}
+.img-bubble {
+  margin: 0.5%;
+}
+.img-bubble img {
+  width: 100%;
+  height: 80%;
+  margin: 0%;
+}
+.img-bubble span {
+  margin-top: 4%;
+  height: 20%;
+  width: 100%;
+  display: inline-block;
+  text-align: center;
+  font-size: .75em;
 }

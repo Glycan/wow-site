@@ -1,0 +1,47 @@
+title: Testing
+header:
+    content: |
+        Mikhail Liberman
+        ================
+    type: fullwidth left
+    style: |
+        top: 0%;
+        background-color: lightblue;
+        height: 7%;
+mike:
+    content: |
+        <img src="images/aboutus.jpg">
+    type: top left unpad
+    style: |
+        width: 20%;
+        height: 40%;
+menu:
+    content:
+        index:
+            content: Index
+            type: tab
+            style: "left: 0%;"
+        contact:
+            content: Contact
+            type: tab
+            style: "left: 5%;"
+    type: top right unpad
+    style: |
+        width: 40%;
+        background-color: #A5A5FF;
+
+
+
+CSS: |
+    /*foo*/
+    #footer {
+        display: none;
+    }
+    .bubble img {
+        height: 100%;
+        width: 100%;
+    }
+less: |
+    /*end*/
+
+

@@ -6,18 +6,27 @@
     <title>1001 Balloon Photos |Wow Balloons!</title>
     <meta http-equiv="content-type" content="text/html;charset=utf-8" />
     <meta name="generator" content="Geany 1.22" />
-    <link rel="stylesheet" type="text/css" href="css/root.css">
-    <link rel="stylesheet" type="text/css" href="css/portfolio.css">
-    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3/jquery.min.js"></script>
-    </script>
+    <link rel="stylesheet" type="text/css" href="css/root.css"/>
+    <link rel="stylesheet" type="text/css" href="css/portfolio.css"/>
+    <link rel="stylesheet" type="text/css" href="lightbox/css/lightbox.css"/>
+
+    <script type="text/javascript" src="lightbox/js/jquery-1.7.2.min.js"></script>
+    <script type="text/javascript" src="lightbox/js/jquery-ui-1.8.18.custom.min.js"></script>
+    <script type="text/javascript" src="lightbox/js/jquery.smooth-scroll.min.js"></script>
+    <script type="text/javascript" src="lightbox/js/lightbox.js"></script>
+
 </head>
 
 <body>
-    <a title="Home" href="index.html"><img src="images/logo.png" id="logo"/></a>
+    <div>
+        <a title="Home" href="index.html">
+            <img src="images/logo.png" id="logo" alt="WoW! Balloons Logo - click to go to home"/>
+        </a>
+    </div>
 
     <div id="tagline">
         <span style="float:left">Balloon decorations for all Occasions</span>
-        <br>
+        <br/>
         <span style="float:right; font-size: 0.8em ; font-style: italic">
             In Business Since 1990
         </span>
@@ -30,7 +39,7 @@
     <div class="tab" id="testemonials-tab"><a href="testemonials.html">Testemonials</a></div>
 
 
-<!---header ends--->
+<!---header ends-->
     <div class="wide long left bubble" id="blurb-bubble">
             <h1>Portfolio</h1>
 <p>Welcome to our portfolio! On the left hand side you can see pictures
@@ -139,16 +148,16 @@ function FrontPage_Form1_Validator(theForm)
 
     </div>
     <div class="small thin img-bubble bubble" id="wedding-bubble">
-            <a><img src="images/section-icons/wedding.jpg"><span>Wedding Balloon Decorations</span></a>
+            <a href="wedding-balloon-decorations.html"><img src="images/section-icons/wedding.jpg"><span>Wedding Balloon Decorations</span></a>
     </div>
     <div class="small thin img-bubble bubble" id="mitzvah-bubble">
-            <a><img src="images/section-icons/mitzvah.jpg"><span>Bar/Bat Mitzvah Parties</span></a>
+            <a href="bar-mitzvah-balloon-decorations.html"><img src="images/section-icons/mitzvah.jpg"><span>Bar/Bat Mitzvah Parties</span></a>
     </div>
     <div class="small thin img-bubble bubble" id="arches-bubble">
-            <a><img src="images/section-icons/arch.jpg"><span>Balloon Arches</span></a>
+            <a href="arch-balloon-decorations.html"><img src="images/section-icons/arch.jpg"><span>Balloon Arches</span></a>
     </div>
     <div class="small thin img-bubble bubble" id="centerpieces-bubble">
-            <a><img src="images/section-icons/centerpieces.jpg"><span>Balloon Centerpieces</span></a>
+            <a href="centerpeice-balloon-decorations.html"><img src="images/section-icons/centerpieces.jpg"><span>Balloon Centerpieces</span></a>
     </div>
     <div class="small thin img-bubble bubble" id="corp-bubble">
             <a><img src="images/section-icons/corporate.jpg"><span>Corporate Party Decorations & Trade Show Decorations</span></a>
@@ -211,7 +220,7 @@ remember.</p>
 <!--content ends-->
 <div id="footer" style="text-align: center;">
     <p><a href="index.html">Home</a> | Other | Third</p>
-    <p>Wow! Effects Inc. <br>
+    <p>Wow! Effects Inc. <br/>
     Balloon Decorations, Balloon Designs and More</p>
 </div>
 

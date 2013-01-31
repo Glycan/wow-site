@@ -1,6 +1,6 @@
 title: WoW! Balloons, Inc | Balloon Decorations
 movie:
-    content: <embed id='movie' src='http://www.youtube.com/v/dsNcA90HnzM&hl=en_US&fs=1&rel=0&hd=1&autoplay=0' type='application/x-shockwave-flash' allowscriptaccess='always' allowhalfscreen='true'/>
+    content: <embed id='movie' src='http://www.youtube.com/v/dsNcA90HnzM&amphl=en_US&ampfs=1&amprel=0&amphd=1&ampautoplay=0' type='application/x-shockwave-flash' allowscriptaccess='always' allowhalfscreen='true'/>
     type: extralen left wide
     style: .top
 blurb:
@@ -19,49 +19,49 @@ blurb:
 
 #section-links
 wedding:
-    content: <a><img src="images/section-icons/wedding.jpg"><p>Wedding Balloon Decorations</p></a>
+    content: <a href="wedding-balloon-decorations.html"><img src="images/section-icons/wedding.jpg"><span>Wedding Balloon Decorations</span></a>
     type: small thin img-bubble
     style: |
         left: 20%;
         .row1
 mitzvah:
-    content: <a><img src="images/section-icons/mitzvah.jpg"><p>Bar/Bat Mitzvah Parties</p></a>
+    content: <a href="bar-mitzvah-balloon-decorations.html"><img src="images/section-icons/mitzvah.jpg"><span>Bar/Bat Mitzvah Parties</span></a>
     type: small thin img-bubble
     style: |
         right: 50%;
         .row1
 corporate:
-    content: <a><img src="images/section-icons/corporate.jpg"><p>Corporate Event Decorations</p></a>
+    content: <a href="corporate-balloon-decorations.html"><img src="images/section-icons/corporate.jpg"><span>Corporate Event Decorations</span></a>
     type: small thin img-bubble
     style: |
         left: 50%;
         .row1
 ceiling:
-    content: <a><img src="images/section-icons/ceiling.jpg"><p>See more occasions</p></a>
+    content: <a href="portfolio.html"><img src="images/section-icons/ceiling.jpg"><span>See more occasions</span></a>
     type: small thin img-bubble
     style: |
         right: 20%;
         .row1
 arch:
-    content: <a><img src="images/section-icons/arch.jpg"><p>Balloon Arches</p></a>
+    content: <a href="arch-balloon-decorations.html"><img src="images/section-icons/arch.jpg"><span>Balloon Arches</span></a>
     type: small thin img-bubble
     style: |
         left: 20%;
         .row2
 sculpture:
-    content: <a><img src="images/section-icons/sculpture.jpg"><p>Balloon Sculptures</p></a>
+    content: <a href="balloon-sculptures.html"><img src="images/section-icons/sculpture.jpg"><span>Balloon Sculptures</span></a>
     type: small thin img-bubble
     style: |
         right: 50%;
         .row2
 centerpeices:
-    content: <a><img src="images/section-icons/centerpieces.jpg"><p>Balloon Centerpeices</p></a>
+    content: <a href="centerpeice-balloon-decorations.html"><img src="images/section-icons/centerpieces.jpg"><span>Balloon Centerpeices</span></a>
     type: small thin img-bubble
     style: |
         left: 50%;
         .row2
 carriage:
-    content: <a><img src="images/section-icons/carriage.jpg"><p>See more designs</p></a>
+    content: <a href="portfolio.html"><img src="images/section-icons/carriage.jpg"><span>See more designs</span></a>
     type: small thin img-bubble
     style: |
         right: 20%;
@@ -131,31 +131,16 @@ CSS: |
         margin-top: auto;
         margin-bottom: auto;
     }
-    .img-bubble {
-        margin: 0.5%;
-    }
-    .img-bubble img {
-        width: 100%;
-        height: 80%;
-        margin: 0%;
-    }
-    .img-bubble p {
-        margin-top: 4%;
-        height: 20%;
-        width: 100%;
-        display: inline-block;
-        text-align: center;
-        font-size: .75em;
-    }
+
     #footer {
         top: (@end + 30% + 2%);
     }
 less: |
     @top: 10%;
-    @row1: (@top + 41% + 2%);
+    @row1: (@top + 41% + 1%);
     @row2: (@row1 + 23%);
     @info: (@row2 + 24%);
-    @end: (@info + 26%);
+    @end: (@info + 23.5%);
     .top {top: @top;}
     .row1 {top: @row1;}
     .row2 {top: @row2;}
