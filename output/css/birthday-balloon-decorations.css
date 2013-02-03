@@ -1,0 +1,38 @@
+
+#footer {
+  top: 175%;
+}
+#blurb-bubble img {
+  float: left;
+  margin: 2%;
+  height: 100%;
+  width: auto;
+}
+a img {
+  padding: 1%;
+}
+
+
+
+#blurb-bubble {
+  bottom: 53%;
+}
+
+
+#form-bubble {
+  bottom: 53%;
+}
+
+
+#images-bubble {
+  bottom: -7%;
+  height: 55%;
+  text-align: center;
+}
+
+
+#ending-bubble {
+  height: 60%;
+  bottom: -72%;
+}
+

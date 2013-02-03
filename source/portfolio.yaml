@@ -1,4 +1,4 @@
-title: 1001 Balloon Photos | Wow Balloons!
+title: 1001 Balloon Photos |Wow Balloons!
 blurb:
     content: |
         Portfolio
@@ -21,7 +21,7 @@ wedding:
     type: small thin img-bubble
     style: ".row1; .col1;"
 mitzvah:
-    content: <a href="bar-mitzvah-balloon-decorations.html"><img src="images/section-icons/mitzvah.jpg"><span>Bar/Bat Mitzvah Parties</span></a>
+    content: <a href="mitzvah-balloon-decorations.html"><img src="images/section-icons/mitzvah.jpg"><span>Bar/Bat Mitzvah Parties</span></a>
     type: small thin img-bubble
     style: ".row1; .col2;"
 arches:
@@ -29,55 +29,56 @@ arches:
     type: small thin img-bubble
     style: ".row1; .col3;"
 centerpieces:
-    content: <a href="centerpeice-balloon-decorations.html"><img src="images/section-icons/centerpieces.jpg"><span>Balloon Centerpieces</span></a>
+    content: <a href="centerpiece-balloon-decorations.html"><img src="images/section-icons/centerpieces.jpg"><span>Balloon Centerpieces</span></a>
     type: small thin img-bubble
     style: ".row1; .col4;"
 corp:
-    content: <a><img src="images/section-icons/corporate.jpg"><span>Corporate Party Decorations & Trade Show Decorations</span></a>
+    content: <a href="corporate-balloon-decorations.html"><img src="images/section-icons/corporate.jpg"><span>Corporate Party Decorations & Trade Show Decorations</span></a>
     type: small thin img-bubble
     style: ".row2; .col1;"
 birthday:
-    content: <a><img src="images/section-icons/birthday.jpg"><span>Birthday & Anniversery Parties</span></a>
+    content: <a href="birthday-balloon-decorations.html"><img src="images/section-icons/birthday.jpg"><span>Birthday & Anniversery Parties</span></a>
     type: small thin img-bubble
     style: ".row2; .col2;"
 col:
-    content: <a><img src="images/section-icons/columns.jpg"><span>Balloon Coloumns</span></a>
+    content: <a href="column-balloon-decorations.html"><img src="images/section-icons/columns.jpg"><span>Balloon Coloumns</span></a>
     type: small thin img-bubble
     style: ".row2; .col3;"
-kids:
-    content: <a><img src="images/section-icons/kids.jpg"><span>Kid Party Decorations</span></a>
+
+kid:
+    content: <a href="kid-party-decorations.html"><img src="images/section-icons/kids.jpg"><span>Kid Party Decorations</span></a>
     type: small thin img-bubble
     style: ".row2; .col4;"
 baby:
-    content: <a><img src="images/section-icons/baby.jpg"><span>Baby Shower & First Birthday</span></a>
+    content: <a href="baby-shower-balloon-decorations.html"><img src="images/section-icons/baby.jpg"><span>Baby Shower & First Birthday</span></a>
     type: small thin img-bubble
     style: ".row3; .col1;"
 holiday:
-    content: <a><img src="images/section-icons/holiday.jpg"><span>Holiday Balloon Decorations</span></a>
+    content: <a href="holiday-balloon-decorations.html"><img src="images/section-icons/holiday.jpg"><span>Holiday Balloon Decorations</span></a>
     type: small thin img-bubble
     style: ".row3; .col2;"
 sculpture:
-    content: <a><img src="images/section-icons/sculpture.jpg"><span>Balloon Sculpture</span></a>
+    content: <a href="balloon-sculptures.html"><img src="images/section-icons/sculpture.jpg"><span>Balloon Sculpture</span></a>
     type: small thin img-bubble
     style: ".row3; .col3;"
 walls:
-    content: <a><img src="images/section-icons/walls.jpg"><span>Balloon Walls</span></a>
+    content: <a href="walls-balloon-decorations.html"><img src="images/section-icons/walls.jpg"><span>Balloon Walls</span></a>
     type: small thin img-bubble
     style: ".row3; .col4;"
 halloween:
-    content: <a><img src="images/section-icons/halloween.jpg"><span>Halloween Decorations</span></a>
+    content: <a href="halloween-balloon-decorations.html"><img src="images/section-icons/halloween.jpg"><span>Halloween Decorations</span></a>
     type: small thin img-bubble
     style: ".row4; .col1;"
 ballroom:
-    content: <a><img src="images/section-icons/ballroom.jpg"><span>Ballroom & Stadium Balloon Decor</span></a>
+    content: <a href="ballroom-balloon-decorations.html"><img src="images/section-icons/ballroom.jpg"><span>Ballroom & Stadium Balloon Decor</span></a>
     type: small thin img-bubble
     style: ".row4; .col2;"
 ceiling:
-    content: <a><img src="images/section-icons/ceiling.jpg"><span>Balloon Ceiling Decorations   </span></a>
+    content: <a href="ceiling-balloon-decorations.html"><img src="images/section-icons/ceiling.jpg"><span>Balloon Ceiling Decorations   </span></a>
     type: small thin img-bubble
     style: ".row4; .col3;"
 general:
-    content: <a><img src="images/section-icons/general.jpg"><span>General Balloon Decor</span></a>
+    content: <a href="general-balloon-decorations.html"><img src="images/section-icons/general.jpg"><span>General Balloon Decor</span></a>
     type: small thin img-bubble
     style: ".row4; .col4;"
 
@@ -108,6 +109,22 @@ end:
     type: left midlen fullwidth
     style: .end
 CSS: |
+    .img-bubble {
+        margin: 0.5%;
+    }
+    .img-bubble img {
+        width: 100%;
+        height: 80%;
+        margin: 0%;
+    }
+    .img-bubble span {
+        margin-top: 4%;
+        height: 20%;
+        width: 100%;
+        display: inline-block;
+        text-align: center;
+        font-size: .75em;
+    }
     #footer {top: @end + 3%}
 less: |
     @top: (10% + 37%);

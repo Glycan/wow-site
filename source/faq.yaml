@@ -1,0 +1,47 @@
+title: Frequently Asked Questions - WoW! Balloons
+blurb:
+    content: |
+        Question of the day: What is your service area?
+        ===============================================
+        The whole world! However, the setup and delivery fee depends on the
+        distance. So if you have a relatively small party, we make sense for
+        you if you are within 300 miles from Boston, Montreal or Salt Lake
+        City (where we have offices). On the other hand, if you have a large
+        event, call us and we will assess whether or not it makes financial
+        sense for you or not.
+    type: left long wide
+    style: .top
+form:
+    content: "{form}"
+    type: right long narrow
+    style: .top
+body:
+    content: |
+        Friquently Asked Questions
+        ==========================
+
+         -  What is your service area?
+
+            The whole world!  However, the setup and delivery fee depends on the distance.  So if you have a relatively small party, we make sense for you if you are within 300 miles from Boston, Montreal or Salt Lake City (where we have offices).  On the other hand, if you have a large event, call us and we will assess whether or not it makes financial sense for you or not.
+
+         -  Can you make _____ out of balloons?
+
+            Since 1990 the answer is "yes"!  It is much faster to say what we don't do: we do not twist animals.  Anything else is possible.
+
+         -  How much is it to decorate a wedding (birthday, anniversary, etc.)?
+
+            There is no answer.  For the same type of occasion some people
+            want elaborate sculptures and lighting, while some just want an
+            arch at the door.  Once we learn some details about your party,
+            and, most importantly,  your taste, we can discuss the
+            decorations and the price.
+
+        Please let us know how we can help make your event a unique and unforgettable experience!
+    type: left extralong fullwidth
+    style: .body
+less: |
+    @top: 10% + 34% + 3%;
+    @body: @top + 38% + 3% + 2%;
+    .top {bottom: 100% - @top}
+    .body {bottom: 100% - @body}
+CSS: "#footer {top: @body + 3%}"
