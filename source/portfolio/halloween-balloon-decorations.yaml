@@ -1,0 +1,70 @@
+title: Balloon Wall | Balloon Decorations | WoW! Balloons, Inc.
+blurb:
+    content: |
+        Halloween Balloon Decorations
+        =============================
+        Halloween balloon decorations: In the holiday world, the day of the
+        dead has a vividly rich history all its own.  Whether you want your
+        spooky night comical or frightful, our Halloween balloon decorations
+        will transform your party to anything from austerely spine-chilling
+        to eerily child-friendly.  Balloons can even build you a sinister
+        haunted house!
+        <a href="halloween-balloon-decorations.html#cont">See more</a>
+    type: wide long left
+    style: .top
+form:
+    content: "{form}"
+    type: narrow long right
+    style: .top
+images:
+    content: |
+        <a href="http://wowballoons.com/Images/Halloween_Balloon_decorations/Halloween_Balloon_decorations_01_big.jpg" rel="lightbox[images]" title=""><img src="http://wowballoons.com/Images/Halloween_Balloon_decorations/Halloween_Balloon_decorations_01_small.jpg"></a>
+        <a href="http://wowballoons.com/Images/Halloween_Balloon_decorations/Halloween_Balloon_decorations_02_big.jpg" rel="lightbox[images]" title=""><img src="http://wowballoons.com/Images/Halloween_Balloon_decorations/Halloween_Balloon_decorations_02_small.jpg"></a>
+        <a href="http://wowballoons.com/Images/Halloween_Balloon_decorations/Halloween_Balloon_decorations_03_big.jpg" rel="lightbox[images]" title=""><img src="http://wowballoons.com/Images/Halloween_Balloon_decorations/Halloween_Balloon_decorations_03_small.jpg"></a>
+        <a href="http://wowballoons.com/Images/Halloween_Balloon_decorations/Halloween_Balloon_decorations_04_big.jpg" rel="lightbox[images]" title=""><img src="http://wowballoons.com/Images/Halloween_Balloon_decorations/Halloween_Balloon_decorations_04_small.jpg"></a>
+        <a href="http://wowballoons.com/Images/Halloween_Balloon_decorations/Halloween_Balloon_decorations_05_big.jpg" rel="lightbox[images]" title=""><img src="http://wowballoons.com/Images/Halloween_Balloon_decorations/Halloween_Balloon_decorations_05_small.jpg"></a>
+    type: fullwidth left
+    style: ".images; height: 13%; text-align: center;"
+
+ending:
+    content: |
+        <span id="cont">Continued from the top</span>
+
+        From informal weddings to intricate banquets, we at Wow Balloons are
+        ready to help you. Owner Mikhail Liberman is always ready to share
+        his amazingly large invaluable expertise with you, and to cooperate
+        with you to produce the event of your dreams. With our focus on
+        exceeding client expectations and extraordinarily quality, we leave
+        our clients astounded.  Our clients always have reason to say "Wow!".
+
+        Wow Balloons can make that special event or wedding reception
+        magical—with more than 21 years experience of decorating Weddings,
+        we specialize in producing spectacular and exceptional decorations
+        to innovate your venue and help create the wedding of your dreams.
+        You can always trust Wow Balloons too make that very special even
+        more fabulous with our amazing, fantastic, and stunning
+        decorations.
+
+        We look forward to working with you.
+    type: left midlen fullwidth
+    style: .end
+
+CSS: |
+    #footer {top: @end + 3%}
+    #blurb-bubble img {
+        float: left;
+        margin: 2%;
+        height: 100%;
+        width: auto;
+    }
+    a img {
+        padding: 1%;
+    }
+less: |
+    @top: 10% + 37%;
+    @images: @top + 17% + 2%;
+    @end: @images + 30% + 2%;
+    .top {bottom: 100% - @top}
+    .images {bottom: 100% - @images}
+    .end {bottom: 100% - @end}
+    /*end*/

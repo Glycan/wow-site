@@ -1,0 +1,81 @@
+title: Balloon Wall | Balloon Decorations | WoW! Balloons, Inc.
+blurb:
+    content: |
+        Balloon Walls
+        ==============
+        The Balloon Wall is simple concept: A wall of balloons with endless
+        possibilities. Hang it from the ceiling or give it life and
+        portability with helium. Add special effects with blinking lights
+        and watch it come alive, a spectacular display in low light
+        settings. We’ve even had people dance with Balloon Wall!
+
+        The Balloon Wall does not separate; it celebrates! It unites us!
+        Gather family, friends, and colleagues for holidays and special
+        occasions. Ask her to marry you. Welcome home a loved one or see
+        them off with a bon voyage. Emblazon it with your corporate logo for
+        company events. Any occasion that is special to you is all the more
+        special with the Balloon Wall.
+
+        <a href="balloon-wall.html#cont">See more</a>
+    type: wide long left
+    style: .top
+form:
+    content: "{form}"
+    type: narrow long right
+    style: .top
+images:
+    content: |
+        <a href="http://wowballoons.com/Images/balloon_wall/Balloon_wall_01_big.jpg" rel="lightbox[images]" title=""><img src="http://wowballoons.com/Images/balloon_wall/Balloon_wall_01_small.jpg"></a>
+        <a href="http://wowballoons.com/Images/balloon_wall/Balloon_wall_02_big.jpg" rel="lightbox[images]" title=""><img src="http://wowballoons.com/Images/balloon_wall/Balloon_wall_02_small.jpg"></a>
+        <a href="http://wowballoons.com/Images/balloon_wall/Balloon_wall_03_big.jpg" rel="lightbox[images]" title=""><img src="http://wowballoons.com/Images/balloon_wall/Balloon_wall_03_small.jpg"></a>
+        <a href="http://wowballoons.com/Images/balloon_wall/Balloon_wall_04_big.jpg" rel="lightbox[images]" title=""><img src="http://wowballoons.com/Images/balloon_wall/Balloon_wall_04_small.jpg"></a>
+        <a href="http://wowballoons.com/Images/balloon_wall/Balloon_wall_05_big.jpg" rel="lightbox[images]" title=""><img src="http://wowballoons.com/Images/balloon_wall/Balloon_wall_05_small.jpg"></a>
+        <a href="http://wowballoons.com/Images/balloon_wall/Balloon_wall_06_big.jpg" rel="lightbox[images]" title=""><img src="http://wowballoons.com/Images/balloon_wall/Balloon_wall_06_small.jpg"></a>
+        <a href="http://wowballoons.com/Images/balloon_wall/Balloon_wall_07_big.jpg" rel="lightbox[images]" title=""><img src="http://wowballoons.com/Images/balloon_wall/Balloon_wall_07_small.jpg"></a>
+        <a href="http://wowballoons.com/Images/balloon_wall/Balloon_wall_08_big.jpg" rel="lightbox[images]" title=""><img src="http://wowballoons.com/Images/balloon_wall/Balloon_wall_08_small.jpg"></a>
+        <a href="http://wowballoons.com/Images/balloon_wall/Balloon_wall_09_big.jpg" rel="lightbox[images]" title=""><img src="http://wowballoons.com/Images/balloon_wall/Balloon_wall_09_small.jpg"></a>
+        <a href="http://wowballoons.com/Images/balloon_wall/Balloon_wall_10_big.jpg" rel="lightbox[images]" title=""><img src="http://wowballoons.com/Images/balloon_wall/Balloon_wall_10_small.jpg"></a>
+        <a href="http://wowballoons.com/Images/balloon_wall/Balloon_wall_11_big.jpg" rel="lightbox[images]" title=""><img src="http://wowballoons.com/Images/balloon_wall/Balloon_wall_11_small.jpg"></a>
+        <a href="http://wowballoons.com/Images/balloon_wall/Balloon_wall_12_big.jpg" rel="lightbox[images]" title=""><img src="http://wowballoons.com/Images/balloon_wall/Balloon_wall_12_small.jpg"></a>
+        <a href="http://wowballoons.com/Images/balloon_wall/Balloon_wall_13_big.jpg" rel="lightbox[images]" title=""><img src="http://wowballoons.com/Images/balloon_wall/Balloon_wall_13_small.jpg"></a>
+        <a href="http://wowballoons.com/Images/balloon_wall/Balloon_wall_14_big.jpg" rel="lightbox[images]" title=""><img src="http://wowballoons.com/Images/balloon_wall/Balloon_wall_14_small.jpg"></a>
+        <a href="http://wowballoons.com/Images/balloon_wall/Balloon_wall_15_big.jpg" rel="lightbox[images]" title=""><img src="http://wowballoons.com/Images/balloon_wall/Balloon_wall_15_small.jpg"></a>
+    type: fullwidth left
+    style: ".images; height: 42%; text-align: center;"
+
+ending:
+    content: |
+        <span id="cont">Continued from the top</span>
+
+        Use the Balloon Wall to decorate as you celebrate your special
+        moments. Congratulations or graduations – for anytime you congregate
+        - decorate with a wall of colors, shapes, images and words
+        expressing hopes and wishes that will Wow! the eye. Balloon
+        decorations will leave a lasting memory for all to remember. So say
+        it with the balloon wall. “Will you marry me?” “We love you.” We
+        will miss you.” “Happy Anniversary.” “Welcome home.” Use the
+        language of love or any other language. If you can put it in words,
+        we can put it on the Wall. The only limitation on the Wall is your
+        imagination.
+    type: left short fullwidth
+    style: .end
+
+CSS: |
+    #footer {top: @end + 3%}
+    #blurb-bubble img {
+        float: left;
+        margin: 2%;
+        height: 100%;
+        width: auto;
+    }
+    a img {
+        padding: 1%;
+    }
+less: |
+    @top: 10% + 37%;
+    @images: @top + 45% + 2%;
+    @end: @images + 17% + 2%;
+    .top {bottom: 100% - @top}
+    .images {bottom: 100% - @images}
+    .end {bottom: 100% - @end}
+    /*end*/

@@ -4,12 +4,17 @@ import yaml
 import markdown
 import os
 import shutil
+from pprint import pprint
 from collections import defaultdict
 from argparse import ArgumentParser
 from yaml_ordered_dict import OrderedDictYAMLLoader
 from subprocess import call, Popen, PIPE
 
 from pdb import set_trace, pm
+
+DEFAULT_ROOT = "/home/glycan/wow-site/output"
+SOURCE_ROOT = "/home/glycan/wow-site/source"
+
 
 parser = ArgumentParser(description="""
 Put togeather a site from source files. The contents of the nonhtml folder
@@ -55,6 +60,11 @@ parser.add_argument("--debug", action="store_true", dest="debug", default=False,
 parser.add_argument("--compress", action="store_true", dest="compress",
     default=False, help="compress CSS outputed by LESS")
 
+parser.add_argument("--root", default=DEFAULT_ROOT, help="the site's root")
+
+def set_root(s):
+    return s.replace("~", args.root)
+
 
 def lessc(source):
     arg = ""
@@ -67,7 +77,7 @@ def lessc(source):
     proc.wait()
     output = proc.stdout.read().decode() + "\n"
     #####CHECK THIS IF ANYTHING LOOKS WEIRD WITH THE CESS!
-    set_trace()
+    #set_trace()
     output = output.split("/*end*/")[-1]
     #lessc import shoves everything in the temp file into the
     #output. this cuts away everything before, well, something
@@ -107,7 +117,11 @@ def compile_items(items, css):
         content += item.format(id=objectid, **attrs)
     return content
 
-def compile(path, dest):
+def compile_file(path, dest):
+    """
+    outputed file is writted to dest ignoring the path subdirectories
+    to output to a subdirectory, pass dest accordingly
+    """
     global filename
     filename = path.split(os.sep)[-1]
     try:
@@ -127,33 +141,54 @@ def compile(path, dest):
         return False
     #start actually compiling
     print("opening css")
-    css = open(dest + os.sep + "css" + os.sep + pagename + ".css", "w")
+    css = open(args.dest + os.sep + "css" + os.sep + pagename + ".css", "w")
     open("temp.less", 'w').write(pageinfo.pop("less", "") + "\n\n")
     css.write(lessc(pageinfo.pop("CSS", "")) + "\n")
     pagetitle = pageinfo.pop("title")
     htmlcontent = compile_items(pageinfo.items(), css)
     print("writing html")
-    open(dest + os.sep + pagename + ".html", "w").write(frame.format(
+    f = open(dest + os.sep + pagename + ".html", "w")
+    f.write(frame.format(
         title=pagetitle,
         stylesheet=pagename + ".css",
         header=header,
         footer=footer,
         content=htmlcontent,
     ))
+    f.flush()
+    f.close()
     print("closing css")
     css.close()
     return True
 
+def compile_files(filetree):
+    """
+    compiles a tree
+    """
+    global processed
+    set_trace()
+    for folder in reversed(filetree):
+        foldername, subfolders, files = folder
+        print("descending into", foldername)
+        if "/" in foldername:
+            foldername.replace
+            os.mkdir(foldername.replace(args.source, args.dest))
+        for filename in files:
+            print("compiling", filename)
+            processed += int(compile_file(
+                foldername + os.sep + filename,
+                args.dest + os.sep + os.sep.join(foldername.split(os.sep)[1:])
+            ))
 
 if __name__ == "__main__":
     args = parser.parse_args()
 
-    frame = open("templates/frame.html").read()
+    frame = set_root(open("templates/frame.html").read())
     item = open("templates/item.html").read()
     rule = open("templates/rule.css").read()
 
-    header = open("other/headers/" + args.header + ".html").read()
-    footer = open("other/footer.html").read()
+    header = set_root(open("other/headers/" + args.header + ".html").read())
+    footer = set_root(open("other/footer.html").read())
     form = open("other/form.html").read()
     if not args.debug:
         set_trace = lambda :None
@@ -192,16 +227,24 @@ if __name__ == "__main__":
         except OSError:
             print("it already exists")
 
+    global processed
     processed = 0
     if "." in args.source:
+        args.source = os.path.relpath(args.source)
         print("compiling one file", args.source)
-        processed += int(compile(args.source, args.dest))
+        path = args.source.split(os.sep)
+        dest = args.dest
+        if len(path) > 2:
+            dest = os.sep.join([args.dest] + path[1:-1])
+        processed += int(compile_file(args.source, dest))
     else:
-        files = os.listdir(args.source)
-        print("source files in folder:", files)
-        for filename in files:
-            print("compiling", filename)
-            processed += int(compile(args.source + os.sep + filename, args.dest))
+        filetree = list(os.walk(args.source))
+        print("source files in folder:")
+        pprint(filetree)
+        compile_files(filetree)
 
-    os.remove("temp.less")
+    try:
+        os.remove("temp.less")
+    except OSError:
+        print("no files were copied. is this ok?")
     print("DONE - compiled", processed, "file(s)\n\n\n")
